@@ -1,0 +1,135 @@
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    color: #333;
+    background-color: #fafafa;
+    line-height: 1.6;
+}
+
+/* Container Layout */
+header, main, footer, section {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header Styling */
+.header-image {
+    background: url('images/header-background.jpg') no-repeat center center / cover;
+    padding: 80px 20px;
+    text-align: center;
+    color: #fff;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    font-size: 2.5em;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+header p {
+    font-size: 1.2em;
+    color: #f8f8f8;
+}
+
+/* Section Styles */
+section {
+    margin-bottom: 50px;
+}
+
+h2 {
+    font-size: 1.8em;
+    margin-bottom: 15px;
+    color: #444;
+}
+
+/* About Section Image */
+#about img {
+    width: 100%;
+    height: auto;
+    margin: 20px 0;
+    border-radius: 8px;
+}
+
+/* Projects Section */
+#projects .project {
+    display: flex;
+    align-items: center;
+    background: #fff;
+    margin-bottom: 20px;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+#projects .project img {
+    width: 120px;
+    height: auto;
+    margin-right: 20px;
+    border-radius: 5px;
+}
+
+.project-description {
+    flex: 1;
+}
+
+.project-description h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.project-description p {
+    margin-bottom: 10px;
+    font-size: 0.9em;
+}
+
+.project-description a {
+    color: #007acc;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.project-description a:hover {
+    text-decoration: underline;
+}
+
+/* Contact Section */
+#contact a {
+    color: #007acc;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+#contact a:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px 0;
+    font-size: 0.9em;
+    color: #777;
+    border-top: 1px solid #eaeaea;
+}
+
+/* Responsive Styles */
+@media (max-width: 600px) {
+    #projects .project {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #projects .project img {
+        width: 100%;
+        height: auto;
+        margin-bottom: 15px;
+    }
+}
